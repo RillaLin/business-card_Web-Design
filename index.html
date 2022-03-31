@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Demo4_1</title>
+        <style>
+            *{
+            font-family:微軟正黑體;
+            position: relative;
+            }
+
+
+            html,body{
+            width:100%; height:100%;
+            padding:0px; margin:0px; 
+            /*  完整貼合外框 */
+            
+            }
+
+            body{
+            background-color:#d1d1d1;
+            /*   上框線 */
+            border-top:solid 20px #9bcbe9;
+            /*   下框線 */
+            border-bottom:solid 20px #9bcbe9;
+            /*   讓框線不要佔有體積，框線體積會算在本體之內 */
+            box-sizing:border-box;
+            overflow:hidden;
+            }
+
+            .namecard{
+            width: 350px;
+            height: 200px;
+            padding: 20px;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:150px;
+            font-weight:100;   
+            /*   字體是細的 */
+            letter-spacing:1px;
+            border-radius:6px;
+            border:solid 1px rgba(0,0,0,0.15);
+            /*   圓角 */
+            color:rgba(0,0,0,0.8);
+            /*   有透明度的黑 */
+            overflow:hidden;
+            box-shadow:0px 25px 15px -20px rgba(0,0,0,0.2);
+            /*   x偏移、y偏移、模糊程度、顏色 */
+            background-color:#eee 
+            /*   #eeeeee的簡寫 */
+            
+            
+            }
+
+            .namecard h2{
+            font-size:25px;
+            font-weight:800;  
+            }
+
+            .namecard h2 span{
+            font-size:12px;  
+            }
+
+            .namecard h5{
+            font-weight:800;  
+            color:#2984bc;
+            /*   color是改字的顏色 */
+            
+            }
+
+            .namecard p{
+            font-size:12px;  
+            line-height:22px; /*行高*/
+            }
+
+            .circle{
+            width: 100px; height: 100px;
+            border-radius: 100%;
+            /*   100%代表全部變圓弧 */
+            position: absolute;
+            
+            }
+
+            .circle1{
+            right: 100px;
+            background-color:#9bcbe9;
+            /*  #f24是#ff2244的簡寫 */
+            
+            }
+
+            .circle2{
+            width:60px; height:60px;
+            /*   讓圓再小一點 */
+            right: -30px;
+            top:-30px;
+            /*   60的一半，剛好鑲在圓心的位置 */
+            border: solid 3px #9bcbe9;
+            
+            }
+
+            .mark{
+            width:100%;
+            font-size:230px;
+            /*   不參與自動排列 */
+            position:absolute;
+            /*   高低置中 */
+            bottom:100px;
+            font-weight:100;
+            /*    border: solid 3px #9bcbe9; */
+            text-align:center;
+            color:rgba(0,0,0,0.05)
+            
+            }
+        </style>
+    </head>
+        
+    <body>
+        <div class="mark">
+        Rilla Lin
+        </div>
+        
+        <div class="namecard">
+        <h2>林旻沛
+        <span> Rilla</span>
+        </h2>
+        
+        <h5>台中教育大學 數位系</h5>
+        <hr>
+        <p>
+            努力學習網頁前後端開發<br>和Motion Graphic互動體驗!
+            <div class="circle circle1">
+            
+            </div>
+            <div class="circle circle2"> 
+        
+            </div>
+        
+        </p>
+        </div>
+          
+    </body>
+
+</html>
